@@ -52,20 +52,24 @@ Minikube is an open-source tool that helps to run Kubernetes on a local computer
 
 # Wordpress.tf file:-
 
-img 5,6
+![Screenshot (5)](https://user-images.githubusercontent.com/45136716/91885297-2c95df80-eca5-11ea-8f4e-c9cc8eabf77d.png)
+
+
+![Screenshot (6)](https://user-images.githubusercontent.com/45136716/91885302-2f90d000-eca5-11ea-876f-d76ffd8312f8.png)
+
 
 2) It will create the RDS on top of AWS.
 
 # databasesql.tf file:-
 
-img 7
+![Screenshot (7)](https://user-images.githubusercontent.com/45136716/91885305-31f32a00-eca5-11ea-9024-88878f5c3c50.png)
 
 
 3) It will provide the IP to connect to Wordpress.
 
 # main.tf files:-
 
-img 8
+![Screenshot (8)](https://user-images.githubusercontent.com/45136716/91885311-34558400-eca5-11ea-9854-9a64204982f6.png)
 
 ## After writing the terraform code. We have to run the command:
 
@@ -73,12 +77,12 @@ img 8
 
       terraform apply --auto-approve
       
- img 9
+ ![9](https://user-images.githubusercontent.com/45136716/91885320-37507480-eca5-11ea-8273-d82ddfef72c2.png)
  
  
  If you get everything green then you are on the right track and everything works fine. Also, we have deployed WordPress as a container on the top of Minikube.
  
- img 10
+ ![10](https://user-images.githubusercontent.com/45136716/91885323-3881a180-eca5-11ea-8917-3a6bcb903220.png)
  
  Now to get the IP for WordPress. In the command line type:
       
@@ -90,18 +94,19 @@ img 8
       
 Now Open minikube-nodes-ip:40000 and proceed with installation wizard:
 
-11
+![11](https://user-images.githubusercontent.com/45136716/91885327-3a4b6500-eca5-11ea-9dbf-a988bb8e7f02.png)
 
-12
+![12](https://user-images.githubusercontent.com/45136716/91885331-3c152880-eca5-11ea-9741-83f4eba006d6.jpg)
 
-13
+![13](https://user-images.githubusercontent.com/45136716/91885336-3ddeec00-eca5-11ea-9007-18b1a3fa2b51.jpg)
 
-14
+![14](https://user-images.githubusercontent.com/45136716/91885339-3fa8af80-eca5-11ea-8f84-37256dae5e48.jpg)
 
-15
+![15](https://user-images.githubusercontent.com/45136716/91885348-42a3a000-eca5-11ea-963a-8569b0c55800.jpg)
 
 
 # thanks alot for giving your time.
 
 
       
+
