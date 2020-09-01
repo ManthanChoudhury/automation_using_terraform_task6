@@ -36,3 +36,72 @@ Kubernetes is an open-source container-orchestration system for automating compu
 A Kubernetes cluster is a set of node machines for running containerized applications. If you’re running Kubernetes, you’re running a cluster. At a minimum, a cluster contains a control plane and one or more compute machines, or nodes. The control plane is responsible for maintaining the desired state of the cluster, such as which applications are running and which container images they use. Nodes actually run the applications and workloads.
 
 For this task, I'll use Minikube, a tool that runs a single-node Kubernetes cluster in a virtual machine on your personal computer.
+
+## AWS RDS Amazon Relational Database Service (Amazon RDS) 
+
+Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching and backups. It frees you to focus on your applications so you can give them the fast performance, high availability, security, and compatibility they need. Amazon RDS is available on several database instance types - optimized for memory, performance, or I/O - and provides you with six familiar database engines to choose from, including Amazon Aurora, MySQL, Oracle Database, etc.
+web service that makes it easier to set up, operate, and scale a relational database in the AWS Cloud. It provides cost-efficient, resizable capacity for an industry-standard relational database and manages common database administration tasks.
+
+We'll configure our Wordpress app deployed on our Minikube cluster to use RDS as its Database.
+
+Minikube is an open-source tool that helps to run Kubernetes on a local computer. Before using minikube we need to start it so here I wrote terraform code to start minikube on my Local Computer.
+
+## Let’s start
+
+1) It will launch the Wordpress Application.
+
+# Wordpress.tf file:-
+
+img 5,6
+
+2) It will create the RDS on top of AWS.
+
+# databasesql.tf file:-
+
+img 7
+
+
+3) It will provide the IP to connect to Wordpress.
+
+# main.tf files:-
+
+img 8
+
+## After writing the terraform code. We have to run the command:
+
+      terraform init 
+
+      terraform apply --auto-approve
+      
+ img 9
+ 
+ 
+ If you get everything green then you are on the right track and everything works fine. Also, we have deployed WordPress as a container on the top of Minikube.
+ 
+ img 10
+ 
+ Now to get the IP for WordPress. In the command line type:
+      
+      minikube ip
+      
+      minikube service list
+      
+      kubectl get all
+      
+Now Open minikube-nodes-ip:40000 and proceed with installation wizard:
+
+11
+
+12
+
+13
+
+14
+
+15
+
+
+# thanks alot for giving your time.
+
+
+      
