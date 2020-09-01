@@ -94,7 +94,7 @@ Minikube is an open-source tool that helps to run Kubernetes on a local computer
       
 Now Open minikube-nodes-ip:40000 and proceed with installation wizard:
 
-![11](https://user-images.githubusercontent.com/45136716/91885327-3a4b6500-eca5-11ea-9dbf-a988bb8e7f02.png)
+
 
 ![12](https://user-images.githubusercontent.com/45136716/91885331-3c152880-eca5-11ea-9741-83f4eba006d6.jpg)
 
